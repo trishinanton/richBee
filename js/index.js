@@ -22,11 +22,12 @@ function onButton() {
     let showValue = searchInput.value;
     if (showValue === '') console.log("Enter the name of your favorite movie")
     else {
-        let url = `https://imdb-api.com/en/API/SearchMovie/k_xb7hjknp/${showValue}`
+        let url = `https://imdb-api.com/en/API/SearchMovie/k_pu5c71j7/${showValue}`
         async function getFilm() {
             try {
                 const response = await fetch(url);
                 const data = await response.json();
+                
                 data.results.forEach(function (element, i) {
                     console.log(element);
                     let clone = elem.cloneNode(true);
@@ -41,7 +42,7 @@ function onButton() {
                     /* Запрос ко второй api */
                     idFilm = element.id;
                     async function getOptions() {
-                        urlOptions = `https://imdb-api.com/en/API/Title/k_xb7hjknp/${idFilm}/FullActor,FullCast,Posters,Images,Ratings,Wikipedia,`
+                        urlOptions = `https://imdb-api.com/en/API/Title/k_pu5c71j7/${idFilm}/FullActor,FullCast,Posters,Images,Ratings,Wikipedia,`
                         try {
                             const response = await fetch(urlOptions);
                             const data = await response.json();

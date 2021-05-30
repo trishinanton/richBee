@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,35 +8,93 @@
     <title>Document</title>
     <link rel="stylesheet" href="./less/descripton-film.css">
 </head>
+
 <body>
     <div class="wrapper">
         <div class="header">
-            <div class="header__input header-input">
-                <div class="header-input__name">Richbee Shows</div>
-                <div class="wrapper-input">
-                    <input placeholder="Type here smth..." type="input" class='header-input__search'>
-                    <img src="./img/Vector.png" alt="" class="header-input__icon">
+            <div class="container">
+                <div class="header__input header-input">
+                    <div class="header-input__name">Richbee Shows</div>
+                    <div class="wrapper-input">
+                        <button class="header-input__button">
+                            <img src="./img/Vector.png" alt="" class="header-input__icon">
+                        </button>
+                        <input placeholder="Type here smth..." type="input" class='header-input__search'>
+                        <!-- <div class="header-input__offer offer">
+                            <div class="offer__name" id=''>Gambit</div>
+                        </div> -->
+                    </div>
+
                 </div>
-                
+            </div>
+
+        </div>
+        <div class="wrapper-main">
+            <div class="container">
+                <div class="main">
+                    <h1 class="main__title">The Queen's Gambit</h1>
+                    <div class="main__description main-description">
+                        <div class="main-description__score">IMDb 8.8</div>
+                        <div class="main-description__genre">Drama</div>
+                        <div class="main-description__vl"></div>
+                        <div class="main-description__name">TVSeries</div>
+                        <div class="main-description__vl"></div>
+                        <div class="main-description__year">2020</div>
+                    </div>
+                    <a href="https://www.imdb.com/video/vi2959588889" target='_blank'><button
+                            class="main__button">Watch</button></a>
+
+                    <div class="main__specification">Top Rated TV #148 | Won 2 Golden Globes. Another 12 wins & 19
+                        nominations.</div>
+                </div>
             </div>
         </div>
-        <div class="container">
-            
-            <div class="main">
-                <h1 class="main__title">The Queen's Gambit</h1>
-                <div class="main__description main-description">
-                    <div class="main-description__score">IMDb 8.8</div>
-                    <div class="main-description__genre">Drama</div>
-                    <div class="main-description__vl"></div>
-                    <div class="main-description__name">TVSeries</div>
-                    <div class="main-description__vl"></div>
-                    <div class="main-description__year">2020</div>
-                </div> 
-                <button class="main__button">Watch</button>
-                <div class="main__specification">Top Rated TV #148 | Won 2 Golden Globes. Another 12 wins & 19 nominations.</div>
+        <div class="short">
+            <div class="container">
+                <h2 class="short__name">Watch The Queen's Gambit on Richbee Shows</h2>
+                <div class="short__description">Nine year-old orphan Beth Harmon is quiet, sullen, and by all
+                    appearances unremarkable. That is, until she plays her first game of chess. Her senses grow sharper,
+                    her thinking clearer, and for the first time in her life she feels herself fully in control. By the
+                    age of sixteen, she's competing for the U.S. Open championship. But as Beth hones her skills on the
+                    professional circuit, the stakes get higher, her isolation grows more frightening, and the thought
+                    of escape becomes all the more tempting. Based on the book by Walter Tevis.</div>
+                <div class="similar">
+                    <div class="similar__name">You may also like</div>
+                    <div class="similar-card">
+
+                        <div class="similar-desc" data-root=''>
+                            <img src="./img/image 2.png" alt="" class="similar-desc__img">
+                            <div class="similar-desc__hover desc-hover">
+                                <div class="desc-hover__container">
+                                    <div class="desc-hover__name">Peaky Blinders</div>
+                                    <div class="desc-hover__genre">Crime, Drama</div>
+                                    <div class="desc-hover__type hover-type">
+                                        <span class="hover-type__type">TV Series</span>
+                                        <span class="hover-type__year">2013</span>
+                                    </div>
+                                    <div class="desc-hover__short">A gangster family epic set in 1900s England, centering on a gang who sew razor blades in the peaks of their caps, and their fierce boss Tommy Shelby.</div>
+                                    <div class="desc-hover__value">IMDb 8.8</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- <div class="similar-desc">
+                            <img src="./img/image 2.png" alt="" class="similar-desc__img">
+                        </div>
+                        <div class="similar-desc">
+                            <img src="./img/image 2.png" alt="" class="similar-desc__img">
+                        </div>
+                        <div class="similar-desc">
+                            <img src="./img/image 2.png" alt="" class="similar-desc__img">
+                        </div> -->
+                    </div>
+
+                </div>
             </div>
         </div>
+
     </div>
-    <script src='./js/descripton-film.js'></script> 
+    <script src='./js/descripton-film.js'></script>
 </body>
+
 </html>
