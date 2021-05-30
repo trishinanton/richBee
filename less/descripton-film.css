@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Montserrat_bold';
+  src: url(../fonts/Montserrat_bold/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+  font-family: 'Montserrat_regular';
+  src: url(../fonts/Montserrat_regular/Montserrat-Regular.ttf);
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.header {
+  background-color: black;
+}
+.header__name {
+  color: white;
+  font-family: 'Montserrat_regular';
+  font-size: 24px;
+}
+.header__input {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  font-size: 18px;
+  color: #5F5F5F;
+  margin: 0 150px;
+}
+.header-input__name {
+  font-size: 24px;
+  color: #FEFEFE;
+  font-family: 'Montserrat_regular';
+}
+.header-input__search {
+  width: 352px;
+  height: 50px;
+  background: #1B1919;
+  border-radius: 30px;
+  border: none;
+  padding-left: 68px;
+}
+.header-input__icon {
+  position: absolute;
+  left: 0;
+  transform: translate(27px, 16px);
+}
+.wrapper {
+  background: url(../img/image\ 1.png) no-repeat;
+}
+.wrapper-input {
+  position: relative;
+}
+.main__title {
+  font-family: 'Montserrat_bold';
+  font-size: 72px;
+  margin-top: 120px;
+  margin-bottom: 37px;
+  color: #FBFBFB;
+  width: 50%;
+}
+.main__description {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-between;
+  align-content: center;
+}
+.main__button {
+  width: 199px;
+  height: 64px;
+  border: 2px solid #FBFBFB;
+  border-radius: 40px;
+}
+.main-description {
+  color: #FBFBFB;
+}
+.main-description__score {
+  font-size: 24px;
+  font-family: 'Montserrat_regular';
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 12px;
+  font-weight: 900;
+  background-color: #FAC539;
+  width: 87px;
+  height: 30px;
+  border-radius: 14px;
+  color: black;
+  text-align: center;
+  top: 50%;
+}
+.main-description__vl {
+  width: 2px;
+  height: 30px;
+  background: #FEFEFE;
+}
+.main-description__genre {
+  font-size: 24px;
+  font-family: 'Montserrat_regular';
+  display: flex;
+  align-items: center;
+}
+.main-description__name {
+  font-size: 24px;
+  font-family: 'Montserrat_regular';
+  display: flex;
+  align-items: center;
+}
+.main-description__year {
+  font-size: 24px;
+  font-family: 'Montserrat_regular';
+  display: flex;
+  align-items: center;
+}
+.main__button {
+  font-size: 18px;
+  color: #FBFBFB;
+  margin-top: 196px;
+  background: linear-gradient(90.3deg, #111111 19%, rgba(17, 17, 17, 0) 99.75%);
+}
+.main__specification {
+  font-size: 18px;
+  font-family: 'Montserrat_regular';
+  color: #FBFBFB;
+  margin-top: 50px;
+  width: 40%;
+}

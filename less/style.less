@@ -1,0 +1,175 @@
+@font-face {
+	font-family: 'Montserrat_bold'; 
+	src: url(../fonts/Montserrat_bold/Montserrat-ExtraBold.ttf); 
+}
+@font-face {
+	font-family: 'Montserrat_regular'; 
+	src: url(../fonts/Montserrat_regular/Montserrat-Regular.ttf); 
+}
+
+
+
+/* .overlay {width: 100%; height:100%; display:block;}
+	#nubexDiv {
+		top: 0; bottom: 0; left: 0; right: 0;
+		position: fixed;
+		overflow: hidden;
+	}
+	#nubexVideo {
+		top: 0; left: 0;
+		position: absolute;
+		width: auto; height: auto;
+		min-width: 100%; 
+		min-height: 100%; 
+	} */
+
+body{
+    height: auto;
+}
+.main-wrapper{
+    background-color: rgb(44, 43, 43);
+   
+}
+.container{
+    max-width: 900px;
+    margin: auto;
+}
+.header{
+    font-family: 'Montserrat_bold';
+    font-size: 64px;
+    text-align: center;
+}
+.description{
+    font-family: 'Montserrat_regular'; 
+}
+.main-screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content:center;
+    color: white;
+    &__header{
+        margin-bottom: 0px;
+    }
+    &__description{
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+}
+.main-form{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin-top: 80px;
+    &__search{
+        font-family: 'Montserrat_regular'; 
+        font-weight: normal;
+        font-size: 18px;
+        height: 50px;
+        width: 500px;
+        border-radius: 39px;
+        border-top-right-radius:0px;
+        border-bottom-right-radius:0px;
+        border-color: white;
+        text-align: left;
+        outline: none;
+        padding-left: 28px;
+    }
+    &__button{
+        font-size: 18px;
+        font-family: 'Montserrat_bold'; 
+        color: #FEFEFE;
+        background-color: #4EA7F9;
+        outline: none;
+        border-color: #4EA7F9;
+        border-radius:40px ;
+        border-top-left-radius:0px;
+        border-bottom-left-radius:0px;
+        width: 130px;
+    }
+}
+.card{
+    margin-top: 20px;
+    width: 60%;
+}
+.description-film{
+   
+     display: none;
+    //  visibility: hidden;
+    &__column{
+        // visibility: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: #111111;
+        opacity: 0.8;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    &__img{
+        width: 95px;
+        height: 141px;
+        margin: 15px;
+        & img{
+            width: 95px;
+            height: 100%;
+            border-radius: 8px;
+        }
+    }
+}
+.sketch{
+    &__name{
+        font-size: 24px;
+        font-family: 'Montserrat_bold';
+        margin-bottom: 12px; 
+    }
+    &__genre{
+        font-size: 14px;
+    }
+    &__vl{
+        width: 110%;
+        height: 0px;
+        background-color: #FEFEFE;
+        border: 0.5px solid rgba(255, 255, 255, 0.05);
+        border-radius: 2px;
+        margin-top: 15px;
+    }
+    &__awards{
+        font-family: 'Montserrat_regular'; 
+        margin-top: 15px;
+        font-size: 12px;
+        color: #FBFBFB;
+        width: 95%;
+    }
+}
+.genre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    &__vl{
+        width: 1px;
+        height: 16px;
+        background: #FEFEFE;
+    }
+
+}
+.film-value{
+    margin-top: 30px;
+
+    &__rating{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 12px;
+        font-weight: 900;
+        background-color: #FAC539;
+        width: 87px;
+        height: 30px;
+        border-radius: 14px;
+        color: black;
+        text-align: center;
+        top: 50%;
+    }
+}
