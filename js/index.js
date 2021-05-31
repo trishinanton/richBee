@@ -22,12 +22,12 @@ function onButton() {
     let showValue = searchInput.value;
     if (showValue === '') console.log("Enter the name of your favorite movie")
     else {
-        let url = `https://imdb-api.com/en/API/SearchMovie/k_pu5c71j7/${showValue}`
+        let url = `https://imdb-api.com/en/API/SearchMovie/k_550yyeo6/${showValue}`
         async function getFilm() {
             try {
                 const response = await fetch(url);
                 const data = await response.json();
-                
+                console.log(data);
                 data.results.forEach(function (element, i) {
                     console.log(element);
                     let clone = elem.cloneNode(true);
@@ -42,11 +42,11 @@ function onButton() {
                     /* Запрос ко второй api */
                     idFilm = element.id;
                     async function getOptions() {
-                        urlOptions = `https://imdb-api.com/en/API/Title/k_pu5c71j7/${idFilm}/FullActor,FullCast,Posters,Images,Ratings,Wikipedia,`
+                        urlOptions = `https://imdb-api.com/en/API/Title/k_550yyeo6/${idFilm}/FullActor,FullCast,Posters,Images,Ratings,Wikipedia,`
                         try {
                             const response = await fetch(urlOptions);
                             const data = await response.json();
-                            // console.log(data);
+                            
                             clone.querySelector('.film-value__rating').innerHTML = data.ratings | ImDb8,8; //рейтинг
                             clone.querySelector('.genre__sort').innerHTML = data.type | TVSeries; //тип
                             clone.querySelector('.genre__genreFilm').innerHTML = data.genres | Drama; //жанр
