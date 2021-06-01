@@ -8,7 +8,7 @@ let searchBtn = document.querySelector ('.header-input__button');
 
 let getId = searchParamsString.get('titleFilm');
 // let getId = 'tt1375666';
- let api = 'k_550yyeo6';
+ let api = 'k_xb7hjknp';
     
 /* searchInput.addEventListener('input', onBtn);
 
@@ -52,6 +52,8 @@ function onBtn(){
             document.querySelector('.wrapper-main').style.background = `url(${dataFilm.image}) no-repeat`
             document.querySelector('.wrapper-main').style.backgroundSize = 'cover';
             document.querySelector('.main__specification').innerHTML = dataFilm.awards;
+            document.querySelector('.short__description').innerHTML = dataFilm.plot;
+            document.querySelector('.short__name').innerHTML = dataFilm.tagline;
 
             /* Show similars films */
             dataFilm.similars.forEach(function(element,index){
